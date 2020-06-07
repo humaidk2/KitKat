@@ -33,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
         Toast.makeText(this, "onPause",Toast.LENGTH_SHORT).show();
     }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Toast.makeText(this, "onStop",Toast.LENGTH_SHORT).show();
+    }
 
 
 }
